@@ -4,8 +4,14 @@ $('.more-pr').click(function(){
 	else $('.third-block').show();
 });
 
-$('.menuShow-icon').click(function(){
+$('.fa-bars').click(function(){
 	if($('.v-menu').is(':visible'))
 		$('.v-menu').hide();
 	else $('.v-menu').show();
+});
+
+$('.fa-search').click(function(){
+	if($('.search-control').is(':visible'))
+		$('.search-control').hide();
+	else $('.search-control').show();
 });

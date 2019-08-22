@@ -46,11 +46,19 @@ $(window).scroll(function(){
 });
 //});
 
-$('.menuShow-icon').click(function(){
+$('.fa-search').click(function(){
+	if($('.search-control').is(':visible'))
+		$('.search-control').hide();
+	else $('.search-control').show();
+});
+
+$('.fa-bars').click(function(){
 	if($('.v-menu').is(':visible'))
 		$('.v-menu').hide();
 	else $('.v-menu').show();
 });
+
+
 
 $('.btn_blank').click(function(){
 		 $('.first-block .conteiner-feedback').show();

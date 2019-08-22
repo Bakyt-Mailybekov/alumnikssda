@@ -71,10 +71,15 @@
 }
 
 .header input{
-	width: 200px;
-	height: 30px;
+	display: block;
+	font-size: 1.8em;
+	width: 90%;
+	height: 45px;
+	border:1px solid #000;
 	position: absolute;
-	border-radius: 10px;
+	margin-left:5%;
+	top: 10px;
+	border-radius: 20px;
 }
 
 .header i{
@@ -143,8 +148,11 @@
 	}
 	.header{
 		position: relative;
-		height: 65px;
+		height: 55px;
 	
+   }
+   .header input{
+   		left: -150px; 
    }
 
 
@@ -154,7 +162,7 @@
 @media only screen and (min-width: 600px) {
 	.header{
 		position: relative;
-		height: 65px;
+		height: 55px;
 	}
 	
 	.header .menuShow-icon i{
@@ -168,6 +176,9 @@
 	.mobilMenu{
 		top: 45px;
 	}
+	.header input{
+		width: 60%;
+	}
 	
 } 
 
@@ -175,7 +186,7 @@
 @media only screen and (min-width: 768px) {
 	.header{
 		position: relative;
-		height: 65px;
+		height: 55px;
 	}
 	.header .menuShow-icon i{
 		display: block;
@@ -188,11 +199,36 @@
 	.mobilMenu{
 		display: block;
 	}
+	.header input{
+		width: 70%;
+	}
 
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+	.header{
+		position: relative;
+		height: 65px;
+	}
+	.header .menuShow-icon i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
+	.header input{
+		width: 88%;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 	.header{
 		position: relative;
 		height: 75px;
@@ -208,24 +244,8 @@
 	.mobilMenu{
 		display: none;
 	}
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-	.header{
-		position: relative;
-		height: 85px;
-	}
-	.header .menuShow-icon i{
-		display: none;
-
-	}
-	.h-menu{
-		display: block;
-		
-	}
-	.mobilMenu{
-		display: none;
+	.header input{
+		width: 90%;
 	}
 }
 
