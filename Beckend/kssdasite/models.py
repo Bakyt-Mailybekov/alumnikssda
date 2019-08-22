@@ -16,6 +16,10 @@ class Year(models.Model):
 class Language(models.Model):
 	name = models.CharField(max_length=50)
 	year = models.ForeignKey(Year, on_delete=models.CASCADE)
+
+	def __str__(self):
+		return '%s %s' % (self.name, self.year)
+		#return self.name + " " + Year.year
 # / Language table
 
 
