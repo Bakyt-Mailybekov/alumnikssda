@@ -8,8 +8,8 @@ def index(request):
 
 
 def projects(request):
-	project = Project.objects.all()
-	return render(request, 'kssdasite/projects.html', {'projects': project})
+	projects = Project.objects.all()
+	return render(request, 'kssdasite/projects.html', {'projects': projects})
 
 
 '''

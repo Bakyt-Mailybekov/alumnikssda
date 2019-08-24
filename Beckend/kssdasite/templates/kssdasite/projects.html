@@ -61,29 +61,22 @@
 
 		<div class="second-block">
 			<h2>Наши работы</h2>
-			{% for project in projects %}
 			<div class="wrapper-pojects">
-				<div class="pr-card">
-					
+<!-- Here comes projects from database. Do not change code! For more information call 0551118998 -->
+			{% for project in projects %}
+				<div class="pr-card">					
 					<div class="project-img"><img src="{{ project.picture.url }}" width="100%" height="100%"></div>
 					<div class="project-text">
 						<h3>{{ project.name }}</h3>
 						<p>{{ project.description }}</p>
 						<p>{{ project.year }}</p>
 						<span class="more-pr">ПОДРОБНЕE</span>
-					</div>
-					
-				</div>				
-			<div class="pr-card">
-					<div class="project-img"><img src="img/c-sharp.png" width="100%" height="100%"></div>
-					<div class="project-text">
-						<h3>Name</h3>
-						<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси</p>
-						<span class="more-pr">ПОДРОБНЕE</span>
-					</div>
-				 </div>
-				 <div class="pr-card">
-					<div class="project-img"><img src="img/c-sharp.png" width="100%" height="100%"></div>
+					</div>					
+				</div>			
+			{% endfor %}
+<!-- Here is end of code for projects from database. Do not change code! For more information call 0551118998 -->
+			<!--<div class="pr-card">
+					<div class="project-img"><img src="{% static 'kssdasite/projects/img/c-sharp.png'%}" width="100%" height="100%"></div>
 					<div class="project-text">
 						<h3>Name</h3>
 						<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси</p>
@@ -91,7 +84,7 @@
 					</div>
 				</div>-->
 			</div>
-			{% endfor %}
+			
 		</div>
 
 
