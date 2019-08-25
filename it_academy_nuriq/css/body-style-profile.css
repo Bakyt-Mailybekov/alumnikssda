@@ -1,0 +1,43 @@
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+    max-height: 1000px;
+    width: 100%;
+    max-width: 1920px;
+    background-image: url("../img/Computer-Programmer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: relative;
+}
+
+.banner-whiteness {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    filter: opacity(0.4);
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 50%;
+}
+
+.banner-text h1 {
+    font-size: 5em;
+    color: black;
+}
+
+.banner-text p {
+	font-size: 1.8em;
+	top: 35%;
+    line-height: 1.8em;
+    font-weight: 600;
+}

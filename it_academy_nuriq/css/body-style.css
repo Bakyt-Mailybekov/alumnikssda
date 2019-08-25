@@ -1,0 +1,122 @@
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+    max-height: 1000px;
+    width: 100%;
+    max-width: 1920px;
+    background-image: url("../img/1662_original.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: relative;
+}
+
+.banner-whiteness {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    filter: opacity(0.4);
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 50%;
+}
+
+.banner-text h1 {
+    font-size: 5em;
+    color: black;
+}
+
+.banner-text p {
+	font-size: 1.8em;
+	top: 35%;
+    line-height: 1.8em;
+    font-weight: 600;
+}
+
+.year-button {
+    width: 180px;
+    background-color: #05b0b3;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 50px 50px;
+    cursor: pointer;
+    transition: hover 0.2s ease;
+    position: relative;
+}
+
+.year-button:hover {
+    background-color: #06ced1;
+    box-shadow: 0 0 5px black;
+}
+
+.year-button p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.years-button-active {
+    cursor: auto;
+    position: absolute;
+    border: 1px solid #818181;
+    top: 70px;
+    left: 3px;
+    box-shadow: 0 0 2px black;
+    width: 300px;
+    display: none;
+    transition: 0.3s ease-in-out;
+    transition: 0.3 ease-in;
+}
+
+.years-button-active ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.years-button-active ul>li>a {
+    font-size: 18px;
+    margin: 15px;
+    font-weight: 600;
+}
+
+/* LANGUAGE BLOCKS */
+
+.lang-blocks {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.l-block {
+    margin-bottom: 30px;
+    flex-basis: 400px;
+}
+
+.l-block > a > img {
+    width: 450px;
+    box-shadow: 0 0 1px black;
+    transition: 0.3s ease-in-out;
+}
+
+.l-block > a > img:hover {
+    box-shadow: 0 0 4px black;
+}
+
+.l-block > p {
+    font-size: 19px;
+    text-align: center;
+}
+

@@ -1,0 +1,72 @@
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 80vh;
+    background-image: url(../img/split2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-whiteness {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    filter: opacity(0.3);
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 50%;
+}
+
+.banner-text h1 {
+    font-size: 5em;
+    color: black;
+}
+
+.banner-text p {
+	font-size: 1.8em;
+	top: 35%;
+    line-height: 1.8em;
+    font-weight: 600;
+}
+
+/*Stud Blocks*/
+
+.students {
+    margin-top: 35px;
+    display: flex;
+    max-width: 450px;
+    flex-wrap: wrap;
+}
+
+.student {
+    border: 1px solid rgb(165, 165, 165);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 4px rgb(175, 174, 174);
+    padding: 25px;
+}
+
+.stud-avatar img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.stud-info h2 {
+    font-size: 16px;
+}
+
+.stud-info section {
+    font-size: 11px;
+}

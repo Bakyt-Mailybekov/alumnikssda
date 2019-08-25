@@ -1,0 +1,258 @@
+
+.top-menu{
+	width: 100%;
+	height: auto;
+	position: relative;
+	border-bottom: 1px solid #85868c;
+	box-shadow: 0px 1px 5px #000;
+	background-color: #fff;
+	position: fixed;
+	z-index: 2;
+	margin-top: -6px;
+}
+
+.header{
+	width: 90%;
+	height: 85px;
+	max-width: 1920px;
+	min-width: 300px;
+	margin: 0px 5%;
+	display: flex;
+	align-items: center;
+
+}
+.menu-header{
+	width: 100%;
+	height: 60px;
+	justify-content: flex-end;
+	position: relative;
+}
+.logo{
+	width: 200px;
+	height: 40px;
+	position: relative;
+	align-items: center;
+}
+.h-menu{
+	width: 95%;
+}
+.header ul{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.mobilMenu{
+	width: 100%;
+	height: auto;
+	display:block;
+	float: right;
+	background-color: #fff; 
+	position:relative;
+	text-align: right;
+	z-index: 10;
+}
+.menuShow-icon{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+	
+}
+
+.search-icon{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin-right: 10px;
+	float: right;
+	position: relative;
+	top: -40px;
+}
+
+.header input{
+	display: block;
+	font-size: 1.8em;
+	width: 90%;
+	height: 45px;
+	border:1px solid #000;
+	position: absolute;
+	margin-left:5%;
+	top: 10px;
+	border-radius: 20px;
+}
+
+.header i{
+	position: relative; 
+	font-size: 2.5em;
+	color: #2c7ae7;
+}
+.menuShow-icon i{
+	margin: 5px;
+	position: relative; 
+	font-size: 3.5em;
+	color: #2c7ae7;
+}
+.v-menu{
+	display: block;
+	position: relative;
+	
+}
+.mobilMenu ul {
+	width: 100%;
+	display: block;
+	float: left;
+	text-align: left;
+	z-index: 20;
+	
+}
+
+
+.menu-header a{	
+	color: #000;
+	font-size: 1.5em;
+	height: 40px;
+	line-height: 40px;
+	padding: 20px 20px;
+}
+.menu-header a:hover{	
+	
+}
+
+
+.mobilMenu a{	
+	width: 100%;
+	color: #000;
+	font-size: 1.8em;
+	line-height: 40px;
+	padding: 20px 20px;
+	margin: 5px 0px;
+}
+.mobilMenu li{
+	width: 100%;
+	background-color: #f0f4f8;
+	margin: 5px 0px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+	.logo{
+		width: 130px;
+		height: 30px;
+		
+	}	
+	.h-menu{
+		display: none;
+		
+	}
+	.header{
+		position: relative;
+		height: 55px;
+	
+   }
+   .header input{
+   		left: -150px; 
+   }
+
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	
+	.header .menuShow-icon i{
+		display: block;
+
+	}
+	.h-menu{
+		display: none;
+		
+	}
+	.mobilMenu{
+		top: 45px;
+	}
+	.header input{
+		width: 60%;
+	}
+	
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	.header .menuShow-icon i{
+		display: block;
+
+	}
+	.h-menu{
+		display: none;
+		
+	}
+	.mobilMenu{
+		display: block;
+	}
+	.header input{
+		width: 70%;
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.header{
+		position: relative;
+		height: 65px;
+	}
+	.header .menuShow-icon i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
+	.header input{
+		width: 88%;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.header{
+		position: relative;
+		height: 75px;
+	}
+	.header .menuShow-icon i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
+	.header input{
+		width: 90%;
+	}
+}
+
+
+
+
+
+
+
