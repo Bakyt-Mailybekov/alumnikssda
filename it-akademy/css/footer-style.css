@@ -21,7 +21,7 @@
 	height: auto;
 	align-content: flex-start;
 	margin: 0px auto;
-	min-width: 250px;
+	min-width: 200px;
 }
 
 
@@ -35,6 +35,7 @@
 	width: 200px;
 	height: 40px;
 }
+
 .footer a{
 	color: grey;
 	font-size: 1.8em;
@@ -59,7 +60,7 @@
 }
 
 .footer-contacts li{
-	font-size: 1.7em;
+	font-size: 1.6em;
 }
 
 
@@ -112,18 +113,18 @@ form{
 	position: relative;
 }
 
-.blank-feedback legend{
+.footer legend{
 	position: relative;
 	font-size: 2em;
 	color: white;
 }
 
 
-.blank-feedback label{
+.footer label{
 	font-size: 1.5em;
 	color: gray;
 }
-.blank-feedback input{
+.footer input{
 	width: 100%;
 	height: 40px;
 	border:2px solid #0ea195;
@@ -134,7 +135,7 @@ form{
 .form-group{
 	margin-top: 15px;
 }
-button{
+.footer form button{
 	position:relative;
 	color: white;
 	margin-bottom: 30px;
@@ -168,6 +169,9 @@ button{
 	.f-link{
 		width: 25%;	
 	}
+	.conteiner-feedback{
+		margin-left: 0%;
+	}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -176,8 +180,9 @@ button{
 		width: 25%;	
 	}
 	.conteiner-feedback{
-		margin-left: 2%; 
+		margin-left: 0%;
 	}
+	
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -185,9 +190,7 @@ button{
 	.f-link{
 		width: 25%;	
 	}
-	.conteiner-feedback{
-		margin-left: 0PX; 
-	}
-
+	
+	
 }
 

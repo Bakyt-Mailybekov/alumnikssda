@@ -12,7 +12,7 @@
 
 .header{
 	width: 90%;
-	height: 85px;
+	height: 65px;
 	max-width: 1920px;
 	min-width: 300px;
 	margin: 0px 5%;
@@ -25,6 +25,7 @@
 	height: 60px;
 	justify-content: flex-end;
 	position: relative;
+	align-items: center;
 }
 .logo{
 	width: 200px;
@@ -33,9 +34,10 @@
 	align-items: center;
 }
 .h-menu{
+	display: none;
 	width: 95%;
 }
-.header ul{
+.header .navbar-h{
 	display: flex;
 	justify-content: flex-end;
 }
@@ -43,7 +45,7 @@
 .mobilMenu{
 	width: 100%;
 	height: auto;
-	display:block;
+	display:none;
 	float: right;
 	background-color: #fff; 
 	position:relative;
@@ -52,39 +54,53 @@
 }
 .menuShow-icon{
 	display: flex;
-	flex-wrap: wrap;
 	position: relative;
-	float: right;
-	margin-top: 15px;
-	margin-right: 10px;
-	
+	justify-content: flex-end;
+	left: 10%;	
+	top: 20%;
 }
 
 .search-icon{
+	display: block;
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
-	margin-right: 10px;
 	float: right;
 	position: relative;
-	top: -40px;
+	top: -38px;
+}
+.none-flex-search{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+}
+.search-div {
+	display: flex;
+	background-color: #fff;
+	flex-wrap: wrap;
+	width:95%;
+	height: 95%;
+	justify-content: flex-end;
+	position:absolute;
 }
 
 .header input{
-	display: block;
 	font-size: 1.8em;
-	width: 90%;
-	height: 45px;
+	width: 40%;
+	min-width: 200px;
+	height: 50%;
 	border:1px solid #000;
-	position: absolute;
-	margin-left:5%;
-	top: 10px;
-	border-radius: 20px;
+	justify-content: flex-end;
+	position: relative;
+	top: 25%;
+	border-radius: 10px;
 }
 
 .header i{
 	position: relative; 
-	font-size: 2.5em;
+	font-size: 2em;
 	color: #2c7ae7;
 }
 .menuShow-icon i{
@@ -96,11 +112,10 @@
 .v-menu{
 	display: block;
 	position: relative;
-	
 }
 .mobilMenu ul {
 	width: 100%;
-	display: block;
+	display:block;
 	float: left;
 	text-align: left;
 	z-index: 20;
@@ -118,7 +133,9 @@
 .menu-header a:hover{	
 	
 }
-
+.menu-header .active a{
+	color: gray;
+}
 
 .mobilMenu a{	
 	width: 100%;
@@ -136,7 +153,7 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 599px) {
+@media screen and (max-width: 599px) {
 	.logo{
 		width: 130px;
 		height: 30px;
@@ -152,14 +169,17 @@
 	
    }
    .header input{
-   		left: -150px; 
+   left: -80px;
+   }
+   .mobilMenu{
+   	display: none;
    }
 
 
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
 	.header{
 		position: relative;
 		height: 55px;
@@ -174,16 +194,18 @@
 		
 	}
 	.mobilMenu{
+		display: none;
 		top: 45px;
 	}
 	.header input{
-		width: 60%;
+		left: -50px;
+		width: 30%;
 	}
 	
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.header{
 		position: relative;
 		height: 55px;
@@ -196,17 +218,49 @@
 		display: none;
 		
 	}
-	.mobilMenu{
-		display: block;
-	}
+	
+	
 	.header input{
-		width: 70%;
+		left: -20px;
+		width: 40%;
 	}
+	 .mobilMenu{
+   		display: none;
+   }
+
 
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	.header .menuShow-icon i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+
+	.search-div {
+		top: 0px;
+	}
+	.header input{
+		left: 0px;
+		width: 40%;
+	}
+	 .mobilMenu{
+ 	  	display: none;
+   }
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
 	.header{
 		position: relative;
 		height: 65px;
@@ -219,34 +273,16 @@
 		display: block;
 		
 	}
-	.mobilMenu{
-		display: none;
-	}
+	
 	.header input{
-		width: 88%;
+		left: 0px;
+		width: 40%;
 	}
-} 
+	 .mobilMenu{
+	   	display: none;
+   }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-	.header{
-		position: relative;
-		height: 75px;
-	}
-	.header .menuShow-icon i{
-		display: none;
-
-	}
-	.h-menu{
-		display: block;
-		
-	}
-	.mobilMenu{
-		display: none;
-	}
-	.header input{
-		width: 90%;
-	}
+	
 }
 
 

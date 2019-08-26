@@ -46,50 +46,84 @@
 	
 }
 .main-text h1{
-	font-size: 5em;
-	color: black;
+	font-size: 4em;
+	color: #303036;
 	margin: 0px 0px;
 	
 }
 .main-text p{
 	font-size: 1.8em;
-	font-style: italic;
-	color: #85868c;
+	color: #303036;
 	top: 35%;
-	line-height: 1.8em;
+	line-height: 1.3em;
 }
 .main-text button{
 	margin: 0px 0px;
 	color: white;
-	width: 150px;
-	height: 40px;
+	width: 130px;
+	height: 35px;
+	border:none;
 	border-radius: 5px;
 	font-size: 1.3em;
 	background: linear-gradient(to right,#2876e2 0,#3f8efc 100%);
 	z-index: 1;
 }
- button:hover{
-	background-color: #0ea195;
+.main-text button:hover{
+	background:linear-gradient(to right,#3f8efc 0,#2876e2 100%);
 
 }
 
 
 .first-block .conteiner-feedback{
 	margin: 0px 40%;
-	border:2px solid #0ea195;
+	border:2px solid #f7f8fa;
 	border-radius: 15px;
 	position: fixed;
-	top: 25%;
+	top: 20%;
 	display: none;
-	background-color:#54B9FC;
+	background-color:#f7f8fa;
 	z-index: 2;
+}
+.first-block legend{
+	position: relative;
+	font-size: 2em;
+	color: #212121;
+}
+.first-block label{
+	font-size: 1.5em;
+	color: gray;
+}
+.first-block input{
+	width: 100%;
+	height: 40px;
+	border:2px solid grey;
+	border-radius: 15px;
+	margin: 15px auto;
+	font-size: 1.3em;
 }
 .conteiner-feedback span i{
 	position: absolute;
 	font-size: 20px;
-	color: orange;
+	color:#3f8efc;
 	top: 5px;
 	left: 92%;
+}
+
+.first-block form button{
+	position:relative;
+	color: white;
+	margin-bottom: 30px;
+	float: right;
+	width: 50%;
+	height: 40px;
+	border-radius: 25px;
+	border:2px solid #3f8efc;
+	font-size: 1.3em;
+	background-color: #fff;
+	color: #000;
+}
+.first-block form button:hover{
+	background-color: #2876e2;
 }
 
 
@@ -118,7 +152,7 @@
 }
 .text-about-us{
 	align-content: flex-start;
-	width: 40%;
+	width: 50%;
 	height: 100%;
 	text-align: left;
 	min-width: 300px;
@@ -129,8 +163,8 @@
 	font-size: 4em;
 }
 .text-about-us p{
-	text-align: justify;
-    color: grey;
+	text-align: left;
+    color: #303036;
 }
 .text-about-us span{
 	position: relative;
@@ -411,7 +445,7 @@
 	
 	text-align: justify;
 	text-align: left;
-    color: grey;
+    color: #303036;
     margin:2px 0; 
 }
 .students{
@@ -447,8 +481,8 @@
 }
 .students-text p{
 	
-	text-align: justify;
-    color: grey;
+	text-align: left;
+    color: #303036;
     margin:2px 0; 
 }
 
@@ -489,7 +523,7 @@
 	
 	text-align: center;
 	margin-top: 3px;
-    color: grey;
+    color: #303036;
 }
 .contact-cube{
 	width: 90%;

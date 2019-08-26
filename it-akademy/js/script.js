@@ -47,16 +47,18 @@ $(window).scroll(function(){
 //});
 
 $('.fa-search').click(function(){
-	if($('.search-control').is(':visible'))
-		$('.search-control').hide();
-	else $('.search-control').show();
+	if($('.none-flex-search').is(':hidden'))
+		$('.none-flex-search').show();
+	else $('.none-flex-search').hide();
 });
 
+
 $('.fa-bars').click(function(){
-	if($('.v-menu').is(':visible'))
-		$('.v-menu').hide();
-	else $('.v-menu').show();
+	if($('.mobilMenu').is(':hidden'))
+		$('.mobilMenu').show();
+	else $('.mobilMenu').hide();
 });
+
 
 
 
