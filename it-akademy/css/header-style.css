@@ -2,11 +2,11 @@
 .banner{
 	width: 100%;
 	height: auto;
-	position: relative;
 	border-bottom: 1px solid #85868c;
 	box-shadow: 0px 1px 5px #000;
 	background-color: #fff;
 	position: fixed;
+	margin:0 0;
 	z-index: 2;
 }
 
@@ -41,6 +41,33 @@
 	display: flex;
 	justify-content: flex-end;
 }
+
+.navbar-h ul{
+	display: none;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 120%;
+	border:1px solid grey;
+	border-top-color: #fff;
+	background-color: #f7f8fa;
+	border-bottom-right-radius: 20px;
+	transition:transform 5.5s ease-out;
+	
+}
+.fifth-work ul a{	
+	color: #000;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 40px;
+	padding: 10px 10px;
+	
+}
+.fifth-work:hover ul{
+	display: block;
+	transition:transform 5.5s ease-out;
+}
+
 
 .mobilMenu{
 	width: 100%;
@@ -125,16 +152,48 @@
 
 .menu-header a{	
 	color: #000;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	height: 40px;
 	line-height: 40px;
 	padding: 20px 20px;
-}
-.menu-header a:hover{	
+	letter-spacing: 1px;
 	
 }
-.menu-header .active a{
+
+.navbar-h li {
+    position: relative;
+    height: 100%;
+    
+}
+
+.navbar-h a::after {
+    content:'';
+    position:absolute;
+    width:80%;
+    transform:scaleX(0);
+    height:1px;
+    bottom: 5px;
+    left:10%;
+    background-color:grey;
+    transform-origin:bottom right;
+    transition:transform 0.25s ease-out;
+}
+
+
+.navbar-h a:hover::after {
+    transform:scaleX(1);
+    transform-origin:bottom right;
+}
+.navbar-h a:hover{
+	color: grey;
+}
+
+
+
+.menu-header .active a::after{
 	color: gray;
+	transform:scaleX(1);
+    transform-origin:bottom right;
 }
 
 .mobilMenu a{	
