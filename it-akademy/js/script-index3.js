@@ -4,14 +4,25 @@ $('.more-pr').click(function(){
 	else $('.third-block').show();
 });
 
-$('.fa-bars').click(function(){
-	if($('.v-menu').is(':visible'))
-		$('.v-menu').hide();
-	else $('.v-menu').show();
+$('.fa-search').click(function(){
+	if($('.none-flex-search').is(':hidden'))
+		$('.none-flex-search').show();
+	else $('.none-flex-search').hide();
 });
 
-$('.fa-search').click(function(){
-	if($('.search-control').is(':visible'))
-		$('.search-control').hide();
-	else $('.search-control').show();
+
+$('.fa-bars').click(function(){
+	if($('.mobilMenu').is(':hidden'))
+		$('.mobilMenu').show();
+	else $('.mobilMenu').hide();
 });
+
+
+
+  $(function() {
+  $('.more-pr').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: ($('.third-block').offset().top)-70}, 500, 'linear');
+  });
+});
+

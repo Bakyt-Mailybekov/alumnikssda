@@ -63,6 +63,7 @@
 	padding: 10px 10px;
 	
 }
+
 .fifth-work:hover ul{
 	display: block;
 	transition:transform 5.5s ease-out;
@@ -75,7 +76,7 @@
 	display:none;
 	float: right;
 	background-color: #fff; 
-	position:relative;
+	position:absolute;
 	text-align: right;
 	z-index: 10;
 }
@@ -125,7 +126,7 @@
 	border-radius: 10px;
 }
 
-.header i{
+.search-icon i{
 	position: relative; 
 	font-size: 2em;
 	color: #2c7ae7;
@@ -148,16 +149,40 @@
 	z-index: 20;
 	
 }
+.fifth-work .mobilM-work{
+	display: none;
+	width: 95%;
+	float: right;
+}
 
-
+.mobilM-work a{	
+	width: 100%;
+	color: #000;
+	font-size: 1.8em;
+	height: 30px;
+	line-height: 40px;
+	padding: 10px 10px;
+	letter-spacing: 1px;	
+}
+.mobilM-work i{
+	position: relative;
+	left: 95%;
+	font-size: 1.5em;
+	float: right;
+	margin: 10px 20px;
+	
+}
+.fifth-work:hover .fa-angle-down{	
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);	
+}
 .menu-header a{	
 	color: #000;
 	font-size: 1.4em;
 	height: 40px;
 	line-height: 40px;
 	padding: 20px 20px;
-	letter-spacing: 1px;
-	
+	letter-spacing: 1px;	
 }
 
 .navbar-h li {
@@ -213,6 +238,9 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 599px) {
+	.banner{
+		position: relative;
+	}
 	.logo{
 		width: 130px;
 		height: 30px;
@@ -239,6 +267,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
+	.banner{
+		position: relative;
+	}
 	.header{
 		position: relative;
 		height: 55px;
@@ -265,6 +296,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+	.banner{
+		position: relative;
+	}
 	.header{
 		position: relative;
 		height: 55px;
@@ -292,6 +326,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+	.banner{
+		position: fixed;
+	}
 	.header{
 		position: relative;
 		height: 55px;
@@ -320,6 +357,9 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+	.banner{
+		position:fixed;
+	}
 	.header{
 		position: relative;
 		height: 65px;
