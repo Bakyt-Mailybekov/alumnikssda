@@ -12,38 +12,18 @@
 	<link rel="stylesheet" type="text/css" href="css/body-style.css">
 	<link rel="stylesheet" type="text/css" href="css/footer-style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/all.min.css">
-	<title>Направления</title>
+	<title>Языки программирования</title>
 	
 </head>
 <body>
-	
-	<div class="top-menu">
-		<div class="header">
-			<a href=""><img class="logo" src="img/logo2.png" alt="IT-academy"></a>
-			<!--Navbar-->
-			<div class="menu-header">
-				<div class="h-menu">
-					<ul class="navbar-h">
-						<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
-						<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
-						<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
-						<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
-						<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
-					</ul>
-				</div>
-				<input type="text" class="search-control" id="" name="" placeholder="Search">
-				<div class="search-icon"><i class="fas fa-search"></i></div>
-				<div class="menuShow-icon">
-					<i class="fas fa-search"></i>
-					<i class="fas fa-bars"></i>
-				</div>
-
-			</div>
-		</div>
-		<div class="mobilMenu">
-					
-					<div class="v-menu">
-						 <ul>
+	<div class="wrapper">
+		<div class="top-menu">
+			<div class="header">
+				<a href=""><img class="logo" src="img/logo2.png" alt="IT-academy"></a>
+				<!--Navbar-->
+				<div class="menu-header">
+					<div class="h-menu">
+						<ul class="navbar-h">
 							<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
 							<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
@@ -51,8 +31,26 @@
 							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
 						</ul>
 					</div>
-		</div>
-	</div>	
+					<div class="menuShow-icon">
+						<i class="fa fa-bars"></i>
+					</div>
+
+				</div>
+			</div>
+			<div class="mobilMenu">
+				<div class="v-menu">
+						<ul>
+						<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
+						<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
+						<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
+						<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
+						<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
 	<!--/Navbar-->
 
 	<!--Body-->
@@ -60,48 +58,34 @@
 		<div class="banner">
 			<div class="banner-whiteness"></div>
 			<div class="banner-text">
-				<h1>Departments</h1>
+				<h1>Языки программирования</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate asperiores quo eos voluptatum dolorem nostrum incidunt necessitatibus reprehenderit.</p>
-			</div>
-		</div>
-
-		<div class="year-button" onclick="showYears()">
-			<p>Годы выпуска &#709</p>
-			<div class="years-button-active" id="year_button">
-				<ul>
-					<li><a href="#">2010-2011</a></li>
-					<li><a href="#">2011-2012</a></li>
-					<li><a href="#">2012-2013</a></li>
-					<li><a href="#">2013-2014</a></li>
-					<li><a href="#">2014-2015</a></li>
-					<li><a href="#">2015-2016</a></li>
-				</ul>
 			</div>
 		</div>
 
 		<div class="lang-blocks">
 			<div class="l-block">
-				<a href="#"><img src="img/course_logo/c-sharp.png" alt=""></a>
+				<a href="index2.html"><img src="img/course_logo/c-sharp.png" alt=""></a>
 				<p>C-Sharp</p>
 			</div>
 			<div class="l-block">
-				<a href="#"><img src="img/course_logo/front-end.png" alt=""></a>
+				<a href="index2.html"><img src="img/course_logo/front-end.png" alt=""></a>
 				<p>Front-End</p>
 			</div>
 			<div class="l-block">
-				<a href="#"><img src="img/course_logo/java_android-mobile.png" alt=""></a>
+				<a href="index2.html"><img src="img/course_logo/java_android-mobile.png" alt=""></a>
 				<p>Java/Android mobile</p>
 			</div>
 			<div class="l-block">
-				<a href="#"><img src="img/course_logo/java.png" alt=""></a>
+				<a href="index2.html"><img src="img/course_logo/java.png" alt=""></a>
 				<p>Java</p>
 			</div>
 			<div class="l-block">
-				<a href="#"><img src="img/course_logo/php.png" alt=""></a>
+				<a href="index2.html"><img src="img/course_logo/php.png" alt=""></a>
 				<p>PHP</p>
 			</div>
 			<div class="l-block">
-				<a href="#"><img src="img/course_logo/python.png" alt=""></a>
+				<a href="index2.html"><img src="img/course_logo/python.png" alt=""></a>
 				<p>Python</p>
 			</div>
 		</div>
@@ -206,7 +190,7 @@
 						  <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
 					  </div>
 				  
-					  <button type="submit" class="btn btn-primary">Отправить форму</button>
+					  <button type="submit" id="form-btn" class="btn btn-primary">Отправить форму</button>
 				  </form>
 			  </div><!-- .col-sm-4 -->
 		  </div>
@@ -218,6 +202,5 @@
 </body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="js/jquery.vide.min.js"></script>
-	<script src="js/year-button.js"></script>
 	<script src="js/script.js"></script>
 </html>

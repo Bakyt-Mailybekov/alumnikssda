@@ -12,38 +12,35 @@
 	<link rel="stylesheet" type="text/css" href="css/body-style-stud.css">
 	<link rel="stylesheet" type="text/css" href="css/footer-style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/all.min.css">
-	<title>Студенты</title>
+
+	<title>Выпускники IT Academy</title>
 	
 </head>
 <body>
+	<div class="wrapper">
+			<div class="top-menu">
+				<div class="header">
+					<a href=""><img class="logo" src="img/logo2.png" alt="IT-academy"></a>
+					<!--Navbar-->
+					<div class="menu-header">
+						<div class="h-menu">
+							<ul class="navbar-h">
+								<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
+								<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
+								<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
+								<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
+								<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
+							</ul>
+						</div>
+						<div class="menuShow-icon">
+							<i class="fa fa-bars"></i>
+						</div>
 	
-	<div class="top-menu">
-		<div class="header">
-			<a href=""><img class="logo" src="img/logo2.png" alt="IT-academy"></a>
-			<!--Navbar-->
-			<div class="menu-header">
-				<div class="h-menu">
-					<ul class="navbar-h">
-						<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
-						<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
-						<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
-						<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
-						<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
-					</ul>
+					</div>
 				</div>
-				<input type="text" class="search-control" id="" name="" placeholder="Search">
-				<div class="search-icon"><i class="fas fa-search"></i></div>
-				<div class="menuShow-icon">
-					<i class="fas fa-search"></i>
-					<i class="fas fa-bars"></i>
-				</div>
-
-			</div>
-		</div>
-		<div class="mobilMenu">
-					
+				<div class="mobilMenu">
 					<div class="v-menu">
-						 <ul>
+							<ul>
 							<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
 							<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
@@ -51,8 +48,10 @@
 							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
 						</ul>
 					</div>
+				</div>
+			</div>	
 		</div>
-	</div>	
+
 	<!--/Navbar-->
 
 
@@ -61,10 +60,42 @@
 		<div class="banner">
 			<div class="banner-whiteness"></div>
 			<div class="banner-text">
-				<h1>Alumnies</h1>
+				<h1>Выпускники IT Academy</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate asperiores quo eos voluptatum dolorem nostrum incidunt necessitatibus reprehenderit.</p>
 			</div>
 		</div>
+
+		<div class="filter-list">
+			<div class="langDropdown">
+				<button onclick="langShow()" id="lang-btn" class="dropbtn">Языки</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">C-Sharp</a>
+					<a href="#">Front-end</a>
+					<a href="#">Java/Android mobile</a>
+					<a href="#">Java</a>
+					<a href="#">PHP</a> 
+					<a href="#">Python</a>
+				</div>
+			</div>
+
+			<div class="yearDropdown">
+				<button onclick="yearShow()" id="lang-btn" class="dropbtnYear">Год выпуска</button>
+				<div id="myDropdownYear" class="dropdown-contentYear">
+					<a id="year" href="#">2010-2011</a>
+					<a id="year" href="#">2010-2011</a>
+					<a id="year" href="#">2010-2011</a>
+					<a id="year" href="#">2010-2011</a>
+					<a id="year" href="#">2010-2011</a>
+					<a id="year" href="#">2010-2011</a>
+					<a id="year" href="#">2010-2011</a>
+				</div>
+			</div>
+
+			<form>
+				<input type="text" name="search" placeholder="Search..">
+			</form>
+		</div>
+
 
 		<div class="students">
 			<div class="student">
@@ -150,7 +181,7 @@
 				</div>
 				
 				<div class="stud-info">
-					<h2>John Week</h2>
+					<h2 class="">John Week</h2>
 					<section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi officia odit incidunt assumenda praesentium commodi quaerat, vero ad cum unde fugiat consectetur ea itaque in porro sunt, ratione eveniet nesciunt.</section>
 					<a href="#">Read more...</a>
 				</div>
@@ -261,7 +292,7 @@
 						  <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
 					  </div>
 				  
-					  <button type="submit" class="btn btn-primary">Отправить форму</button>
+					  <button type="submit" id="form-btn" class="btn btn-primary">Отправить форму</button>
 				  </form>
 			  </div><!-- .col-sm-4 -->
 		  </div>
@@ -273,5 +304,5 @@
 </body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="js/jquery.vide.min.js"></script>
-	<script  src="js/script.js"></script>	
+	<script src="js/lang-btn.js"></script>
 </html>

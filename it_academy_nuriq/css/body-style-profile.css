@@ -8,9 +8,10 @@
     max-height: 1000px;
     width: 100%;
     max-width: 1920px;
-    background-image: url("../img/Computer-Programmer.jpg");
+    background-image: url("../img/stud-profile-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     z-index: -1;
     position: relative;
 }
