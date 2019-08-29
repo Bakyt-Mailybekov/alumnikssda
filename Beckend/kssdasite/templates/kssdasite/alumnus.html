@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="discription" content="Программисты-выпускники компьютерных программ и технологии IT-Academy: Java, Java/Mobile App, PHP, Front-End, C#, Python.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front2/css/all-styles.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front2/css/header-style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front2/css/body-style-stud.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front2/css/footer-style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front2/css/font-awesome/css/all.min.css'%}">
+	<title>Профиль аламника</title>
+	
+</head>
+<body>
+	
+	<div class="wrapper">
+			<div class="top-menu">
+				<div class="header">
+					<a href=""><img class="logo" src="{% static 'kssdasite/Front2/img/logo2.png'%}" alt="IT-academy"></a>
+					<!--Navbar-->
+					<div class="menu-header">
+						<div class="h-menu">
+							<ul class="navbar-h">
+								<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
+								<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
+								<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
+								<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
+								<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
+							</ul>
+						</div>
+						<div class="menuShow-icon">
+							<i class="fa fa-bars"></i>
+						</div>
+	
+					</div>
+				</div>
+				<div class="mobilMenu">
+					<div class="v-menu">
+							<ul>
+							<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
+							<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
+							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
+							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
+							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+	<!--/Navbar-->
+
+	<!--Body-->
+
+
+	<div class="wrapper">
+		<div class="banner">
+			<div class="banner-whiteness"></div>
+			<div class="stud-discription">
+				<h2 id="first_name">John</h2>
+				<h2 id="last_name">Week</h2>
+			</div>
+			<div class="stud_ava">
+				<img id="picture" src="{% static 'kssdasite/Front2/img/StudAvatars/ava.png'%}" alt="">
+			</div>
+		</div>
+
+		<div class="discriptions">
+			<div class="aboutStud">
+				<h2>О студенте</h2>
+				<p class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus voluptates atque commodi qui eius ab voluptas. Ducimus quisquam obcaecati, sit quia nostrum labore, odio voluptas provident deleniti aperiam fuga.</p>
+			</div>
+
+			<div class="stud-contacts">
+				<h2>Контакты</h2>
+				<p>Email: <span id="email">john@gmail.com</span></p>
+				<p>Телефон: <span id="phone_number">0555 000 123</span></p>
+				<p>GitHub: <a href="#" id="github_link">http://github_link.git</a></p>
+				<button class="btn" style="width:100%"><i class="fa fa-download"></i>Скачать CV</button>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!--/Body-->
+
+	<!--Footer-->
+	<div class="sixth-bock">
+		<div class="footer">				
+			<div class="footer-link f-link">
+				<h3>Полезные Ссылки</h3>
+				<ul>
+					<li><a href=""> Статьи</a></li>
+					<li><a href=""> Курсы</a></li>
+					<li><a href=""> Проекты</a></li>
+					<li><a href=""> Вакансии</a></li>
+					<li><a href=""> Контакты</a></li>
+
+				</ul>
+				<div class="icon-media">
+					<a href=""><i class="fab fa-facebook-square"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href=""><i class="fas fa-envelope-square"></i></a>
+				</div>
+				
+			</div>
+			<div class="footer-courses f-link">
+				<h3>Курсы</h3>
+				<ul>
+					
+					<li><a href=""> Java/Mobile App</a></li>
+					<li><a href=""> Java</a></li>
+					<li><a href=""> Php</a></li>
+					<li><a href=""> Front-End</a></li>
+					<li><a href=""> C#</a></li>
+					<li><a href=""> Scratch</a></li>
+
+				</ul>
+			
+			</div>
+			<div class="footer-contacts f-link">
+				<h3>Контакты</h3>
+				<div class="text-footer-contacts bish">
+					<ul>
+						
+						<li><span><i class="fas fa-map-marker-alt"></i></span></i>г. Бишкек, Жумабека 141</li>
+						<li><span><i class="fas fa-envelope"></i></span><a href="mailto:itacademy98@gmail.com">itacademy98@gmail.com</a></li>
+					<li><span><i class="fas fa-mobile"></i></span><a href="tel:+996772000562">+996 (772) 000 562</a></li>
+
+					</ul>
+				</div>
+				<div class="text-footer-contacts osh">
+					<ul>
+						
+						<li><span><i class="fas fa-map-marker-alt"></i></span>г. Ош, 714003, ул.Петрова б/н</li>
+						<li><span><i class="fas fa-envelope"></i></span><a href="mailto:itacademy98@gmail.com">itacademy98@gmail.com</a></li>
+						<li><span><i class="fas fa-mobile"></i></span><a href="tel:+996779609000">+996 (779) 609 000</a></li>
+
+					</ul>
+					
+				</div>
+				<div class="text-footer-contacts karakol">
+					<ul>
+						
+						<li><span><i class="fas fa-map-marker-alt"></i></span>г. Каракол, Есенина-1</li>
+						<li><span><i class="fas fa-envelope"></i></span><a href="mailto:itacademy98@gmail.com">itacademy98@gmail.com</a></li>
+					<li><span><i class="fas fa-mobile"></i></span><a href="tel:+996556521138">+996 (556) 521 138</a></li>
+
+					</ul>
+					
+				</div>
+				<div class="text-footer-contacts kara-balta">
+					<ul>
+						
+						<li><span><i class="fas fa-map-marker-alt"></i></span>ул. Шопокова 4, г. Кара-Балта</li>
+						<li><span><i class="fas fa-envelope"></i></span><a href="mailto:itacademy98@gmail.com">itacademy98@gmail.com</a></li>
+						<li><span><i class="fas fa-mobile"></i></span><a href="tel:+9967074848 46">+996 707 48 48 46</a></li>
+
+					</ul>
+					
+				</div>
+		</div>
+		<div class="conteiner-feedback f-link">
+			  <div class="blank-feedback">
+				  <form action="feedback.php" method="POST">
+					  <legend>Заголовок формы</legend>
+
+					  <div class="form-group">
+						  <label for="">Введите ваше имя</label>
+						  <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+					  </div>
+				  
+					  <div class="form-group">
+						  <label for="">Введите номер телефона</label>
+						  <input type="text" class="form-control" id="" name="user_phone" placeholder="+996 (500) 55 55 55">
+					  </div>
+				  
+					  <div class="form-group">
+						  <label for="">Введите email</label>
+						  <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+					  </div>
+				  
+					  <button type="submit" class="btn btn-primary">Отправить форму</button>
+				  </form>
+			  </div><!-- .col-sm-4 -->
+		  </div>
+				
+		
+		</div>
+	</div>
+
+</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="{% static 'kssdasite/Front2/js/jquery.vide.min.js'%}"></script>
+	<script  src="{% static 'kssdasite/Front2/js/script.js'%}"></script>	
+</html>

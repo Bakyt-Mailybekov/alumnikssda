@@ -8,29 +8,51 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/projects/css/all-styles.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/projects/css/header-style.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/projects/css/body-style-index3.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/projects/css/footer-style.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/projects/css/font-awesome/css/all.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/all-styles.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/header-style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/body-style-index3.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/footer-style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/font-awesome/css/all.min.css'%}">
 </head>
 <body>
 	<div class="wrapper">
 		<div class="banner">
 			<div class="header">
-				<a href=""><img class="logo" src="{% static 'kssdasite/projects/img/logo2.png'%}" alt="IT-academy"></a>
+				<a href=""><img class="logo" src="{% static 'kssdasite/Front1/img/logo2.png'%}" alt="IT-academy"></a>
 				<!--Navbar-->
 				<div class="menu-header">
 					<div class="h-menu">
-					    <ul>
+					    <ul class="navbar-h">
 							<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
 							<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
-							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
+							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ </a>
+								<ul>
+									<li><a href="#"> Проекты</a></li>
+									<li><a href="languages/"> Студенты</a></li>
+								</ul>
+
+
+							</li>
 							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
 						</ul>
 					</div>
-					<div class="menuShow-icon"><i class="fas fa-bars"></i></div>
+					<div class="none-flex-search">
+						<div class="search-div">
+						<input type="text" class="search-control" placeholder="Search...">
+						</div>
+					</div>
+					
+					
+					<div class="search-icon">
+						<i class="fas fa-search"></i>
+					</div>
+					<div class="menuShow-icon">
+
+						<i class="fas fa-search"></i>
+						<i class="fas fa-bars"></i>
+					</div>
+
 				</div>
 			</div>
 			<div class="mobilMenu">
@@ -40,7 +62,15 @@
 								<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
 								<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 								<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
-								<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
+								<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ
+								<i class="fas fa-angle-down"></i></a>
+									<ul class="mobilM-work">
+										<li><a href="projects/"> Проекты</a></li>
+										<li><a href=""> Студенты</a>
+										</li>
+									</ul>
+
+								</li>
 								<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
 							</ul>
 						</div>
@@ -62,95 +92,44 @@
 		<div class="second-block">
 			<h2>Наши работы</h2>
 			<div class="wrapper-pojects">
-<!-- Here comes projects from database. Do not change code! For more information call 0551118998 -->
-			{% for project in projects %}
-				<div class="pr-card">					
-					<div class="project-img"><img src="{{ project.picture.url }}" width="100%" height="100%"></div>
+				{% for project in projects %}
+				<div class="pr-card">
+					<div class="project-img"><img src="{{ project.picture.url }}" width="98%" height="98%"></div>
 					<div class="project-text">
 						<h3>{{ project.name }}</h3>
 						<p>{{ project.description }}</p>
-						<p>{{ project.year }}</p>
-						<span class="more-pr">ПОДРОБНЕE</span>
-					</div>					
-				</div>			
-			{% endfor %}
-<!-- Here is end of code for projects from database. Do not change code! For more information call 0551118998 -->
-
-			<!--<div class="pr-card">
-					<div class="project-img"><img src="{% static 'kssdasite/projects/img/c-sharp.png'%}" width="100%" height="100%"></div>
-					<div class="project-text">
-						<h3>Name</h3>
-						<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси</p>
-						<span class="more-pr">ПОДРОБНЕE</span>
+						<a href="#about-project"><span class="more-pr">ПОДРОБНЕE</span></a>
 					</div>
-				</div>-->
+				</div>
+				{% endfor %}				
 			</div>
-			
 		</div>
 
 
-		<div class="third-block">
+		<div class="third-block" id="about-project">
 			<div class="wrapper-pojects">
 				<div class="text-about-project">
 							<h3>Name</h3>
 							<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси</p>
 				</div>
 				<div class="pr-img">
-					<img src="img/c-sharp.png" width="30%" height="100%">
-					<img src="img/c-sharp.png" width="30%" height="100%">
-					<img src="img/c-sharp.png" width="30%" height="100%">
+					<img src="{% static 'kssdasite/Front1/img/c-sharp.png'%}" >
 				</div>
+				
 				<div class="project-participants"><h2>Участники Проекта</h2></div>
 
 				<div class="person-card">
-					<div class="more-person"><a href=""><i class="far fa-arrow-alt-circle-right"></i></a></div>
-					<div class="person-img"><img src="img/Bakyt.jpg" width="100%" height="100%"></div>
+					<div class="more-person"><a href=""><i class="far fa-arrow-alt-circle-right"></i></a>
+					</div>
+					<div class="person-img"><img src="{% static 'kssdasite/Front1/img/Bakyt.jpg'%}" width="100%" height="100%"></div>
 					<div class="info-person">
 						<h3>Bakyt Mailybekov</h3>
 						<p>Java</p>
 					</div>
 				</div>
-				<div class="person-card">
-					<div class="more-person"><a href=""><i class="far fa-arrow-alt-circle-right"></i></a></div>
-					<div class="person-img"><img src="img/Bakyt.jpg" width="100%" height="100%"></div>
-					<div class="info-person">
-						<h3>Bakyt Mailybekov</h3>
-						<p>C#</p>
-						
-					</div>
-				 </div>
-				 <div class="person-card">
-				 	<div class="more-person"><a href=""><i class="far fa-arrow-alt-circle-right"></i></a></div>
-					<div class="person-img"><img src="img/Bakyt.jpg" width="100%" height="100%"></div>
-					<div class="info-person">
-						<h3>Bakyt Mailybekov</h3>
-						<p>Front-Ent</p>
-					</div>
-				</div>
-				<div class="person-card">
-					<div class="more-person"><a href=""><i class="far fa-arrow-alt-circle-right"></i></a></div>
-					<div class="person-img"><img src="img/Bakyt.jpg" width="100%" height="100%"></div>
-					<div class="info-person">
-						<h3>Bakyt Mailybekov</h3>
-						<p>Front-Ent</p>
-					</div>
-				</div>
-
-
 			</div>
-
-
-
-
 		</div>
-
-
-
-
-
 	</div>
-
-
 
 	<!--footer-->
 		<div class="sixth-bock">
@@ -251,17 +230,13 @@
 				      			<button type="submit" class="btn btn-primary">Отправить форму</button>
 				      		</form>
 				      	</div>
-				</div>
-							
+				</div>							
 			</div>
 		</div>
-			
-
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="{%static 'kssdasite/index/js/jquery.vide.min.js'%}"></script>
-	<script  src="{%static 'kssdasite/index/js/script.js'%}"></script>
+	<script  src="{% static 'kssdasite/Front1/js/script-index3.js'%}"></script>
 
 </body>
 </html>

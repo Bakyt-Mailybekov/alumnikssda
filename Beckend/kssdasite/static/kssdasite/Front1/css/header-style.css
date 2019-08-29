@@ -1,0 +1,392 @@
+
+.banner{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #85868c;
+	box-shadow: 0px 1px 5px #000;
+	background-color: #fff;
+	position: fixed;
+	margin:0 0;
+	z-index: 2;
+}
+
+.header{
+	width: 90%;
+	height: 65px;
+	max-width: 1920px;
+	min-width: 300px;
+	margin: 0px 5%;
+	display: flex;
+	align-items: center;
+
+}
+.menu-header{
+	width: 100%;
+	height: 60px;
+	justify-content: flex-end;
+	position: relative;
+	align-items: center;
+}
+.logo{
+	width: 200px;
+	height: 40px;
+	position: relative;
+	align-items: center;
+}
+.h-menu{
+	display: none;
+	width: 95%;
+}
+.header .navbar-h{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar-h ul{
+	display: none;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 120%;
+	border:1px solid grey;
+	border-top-color: #fff;
+	background-color: #f7f8fa;
+	border-bottom-right-radius: 20px;
+	transition:transform 5.5s ease-out;
+	
+}
+.fifth-work ul a{	
+	color: #000;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 40px;
+	padding: 10px 10px;
+	
+}
+
+.fifth-work:hover ul{
+	display: block;
+	transition:transform 5.5s ease-out;
+}
+
+
+.mobilMenu{
+	width: 100%;
+	height: auto;
+	display:none;
+	float: right;
+	background-color: #fff; 
+	position:absolute;
+	text-align: right;
+	z-index: 10;
+}
+.menuShow-icon{
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	left: 10%;	
+	top: 20%;
+}
+
+.search-icon{
+	display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	float: right;
+	position: relative;
+	top: -38px;
+}
+.none-flex-search{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+}
+.search-div {
+	display: flex;
+	background-color: #fff;
+	flex-wrap: wrap;
+	width:95%;
+	height: 95%;
+	justify-content: flex-end;
+	position:absolute;
+}
+
+.header input{
+	font-size: 1.8em;
+	width: 40%;
+	min-width: 200px;
+	height: 50%;
+	border:1px solid #000;
+	justify-content: flex-end;
+	position: relative;
+	top: 25%;
+	border-radius: 10px;
+}
+
+.search-icon i{
+	position: relative; 
+	font-size: 2em;
+	color: #2c7ae7;
+}
+.menuShow-icon i{
+	margin: 5px;
+	position: relative; 
+	font-size: 3.5em;
+	color: #2c7ae7;
+}
+.v-menu{
+	display: block;
+	position: relative;
+}
+.mobilMenu ul {
+	width: 100%;
+	display:block;
+	float: left;
+	text-align: left;
+	z-index: 20;
+	
+}
+.fifth-work .mobilM-work{
+	display: none;
+	width: 95%;
+	float: right;
+}
+
+.mobilM-work a{	
+	width: 100%;
+	color: #000;
+	font-size: 1.8em;
+	height: 30px;
+	line-height: 40px;
+	padding: 10px 10px;
+	letter-spacing: 1px;	
+}
+.mobilM-work i{
+	position: relative;
+	left: 95%;
+	font-size: 1.5em;
+	float: right;
+	margin: 10px 20px;
+	
+}
+.fifth-work:hover .fa-angle-down{	
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);	
+}
+.menu-header a{	
+	color: #000;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 40px;
+	padding: 20px 20px;
+	letter-spacing: 1px;	
+}
+
+.navbar-h li {
+    position: relative;
+    height: 100%;
+    
+}
+
+.navbar-h a::after {
+    content:'';
+    position:absolute;
+    width:80%;
+    transform:scaleX(0);
+    height:1px;
+    bottom: 5px;
+    left:10%;
+    background-color:grey;
+    transform-origin:bottom right;
+    transition:transform 0.25s ease-out;
+}
+
+
+.navbar-h a:hover::after {
+    transform:scaleX(1);
+    transform-origin:bottom right;
+}
+.navbar-h a:hover{
+	color: grey;
+}
+
+
+
+.menu-header .active a::after{
+	color: gray;
+	transform:scaleX(1);
+    transform-origin:bottom right;
+}
+
+.mobilMenu a{	
+	width: 100%;
+	color: #000;
+	font-size: 1.8em;
+	line-height: 40px;
+	padding: 20px 20px;
+	margin: 5px 0px;
+}
+.mobilMenu li{
+	width: 100%;
+	background-color: #f0f4f8;
+	margin: 5px 0px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 599px) {
+	.banner{
+		position: relative;
+	}
+	.logo{
+		width: 130px;
+		height: 30px;
+		
+	}	
+	.h-menu{
+		display: none;
+		
+	}
+	.header{
+		position: relative;
+		height: 55px;
+	
+   }
+   .header input{
+   left: -80px;
+   }
+   .mobilMenu{
+   	display: none;
+   }
+
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+	.banner{
+		position: relative;
+	}
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	
+	.header .menuShow-icon i{
+		display: block;
+
+	}
+	.h-menu{
+		display: none;
+		
+	}
+	.mobilMenu{
+		display: none;
+		top: 45px;
+	}
+	.header input{
+		left: -50px;
+		width: 30%;
+	}
+	
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+	.banner{
+		position: relative;
+	}
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	.header .menuShow-icon i{
+		display: block;
+
+	}
+	.h-menu{
+		display: none;
+		
+	}
+	
+	
+	.header input{
+		left: -20px;
+		width: 40%;
+	}
+	 .mobilMenu{
+   		display: none;
+   }
+
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+	.banner{
+		position: fixed;
+	}
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	.header .menuShow-icon i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+
+	.search-div {
+		top: 0px;
+	}
+	.header input{
+		left: 0px;
+		width: 40%;
+	}
+	 .mobilMenu{
+ 	  	display: none;
+   }
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+	.banner{
+		position:fixed;
+	}
+	.header{
+		position: relative;
+		height: 65px;
+	}
+	.header .menuShow-icon i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	
+	.header input{
+		left: 0px;
+		width: 40%;
+	}
+	 .mobilMenu{
+	   	display: none;
+   }
+
+	
+}
+
+
+
+
+
+
+

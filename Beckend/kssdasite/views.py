@@ -11,6 +11,17 @@ def projects(request):
 	projects = Project.objects.all()
 	return render(request, 'kssdasite/projects.html', {'projects': projects})
 
+def languages(request):
+    return render(request, 'kssdasite/languages.html')
+
+def alumni(request):
+    alumnis = Alumni.objects.all()
+    return render(request, 'kssdasite/alumni.html', {'alumnis': alumnis})
+
+def alumnus(request):
+    return render(request, 'kssdasite/alumnus.html')
+
+
 
 
 def about(request):

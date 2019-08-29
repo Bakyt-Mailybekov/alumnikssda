@@ -8,33 +8,50 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/index/css/all-styles.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/index/css/header-style.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/index/css/body-style.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/index/css/footer-style.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/index/css/font-awesome/css/all.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/all-styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/header-style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/body-style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/footer-style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/Front1/css/font-awesome/css/all.min.css' %}">
 </head>
 <body>
 	
-	<!--Header-->
-	<div class="wrapper">	
+	
+	<div class="wrapper">
+	<!--Header-->	
 		<div class="banner">
 			<div class="header">
-				<a href=""><img class="logo" src="{% static 'kssdasite/projects/img/logo2.png'%}" alt="IT-academy"></a>
+				<a href=""><img class="logo" src="{% static 'kssdasite/Front1/img/logo2.png'%}" alt="IT-academy"></a>
 				<!--Navbar-->
 				<div class="menu-header">
 					<div class="h-menu">
-					    <ul>
+					    <ul class="navbar-h">
 							<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
 							<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
-							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
+							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ </a>
+								<ul>
+									<li><a href="projects/"> Проекты</a></li>
+									<li><a href="languages/"> Студенты</a></li>
+								</ul>
+
+
+							</li>
 							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
 						</ul>
 					</div>
-					<input type="text" class="search-control" id="" name="" placeholder="Search">
-					<div class="search-icon"><i class="fas fa-search"></i></div>
+					<div class="none-flex-search">
+						<div class="search-div">
+						<input type="text" class="search-control" placeholder="Search...">
+						</div>
+					</div>
+					
+					
+					<div class="search-icon">
+						<i class="fas fa-search"></i>
+					</div>
 					<div class="menuShow-icon">
+
 						<i class="fas fa-search"></i>
 						<i class="fas fa-bars"></i>
 					</div>
@@ -48,7 +65,15 @@
 								<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
 								<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 								<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
-								<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
+								<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ
+								<i class="fas fa-angle-down"></i></a>
+									<ul class="mobilM-work">
+										<li><a href="projects/"> Проекты</a></li>
+										<li><a href="languages/"> Студенты</a>
+										</li>
+									</ul>
+
+								</li>
 								<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
 							</ul>
 						</div>
@@ -127,7 +152,7 @@
 						 <div class="st">
 						 	<div class="st-objects all-students">
 								<div class="st-number count">1000</div>
-								<span>Alumni</span>
+								<span>Alumnies</span>
 							</div>
 							<div class="st-objects python">
 								<div class="st-number count">200</div>
@@ -177,7 +202,7 @@
 							</a>
 						</div>
 						<div class="students show-border">
-							<a href="#"><div class="students-img w-img"></div>
+							<a href="languages/"><div class="students-img w-img"></div>
 							</a>
 							<div class="students-text">
 								<h4>Студенты</h4>
@@ -185,7 +210,7 @@
 
 								
 							</div>
-							<a href="projects/">
+							<a href="languages/">
 							<span>ПОДРОБНЕЕ</span>
 							</a>
 						</div>
@@ -326,7 +351,7 @@
 								
 							</div>
 					</div>
-					<div class="conteiner-feedback f-link">
+					<div class="f-link conteiner-feedback">
 				      	<div class="blank-feedback">
 				      		<form action="feedback.php" method="POST">
 				      			<legend>Заголовок формы</legend>
@@ -366,7 +391,6 @@
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="{%static 'kssdasite/index/js/jquery.vide.min.js'%}"></script>
-	<script  src="{%static 'kssdasite/index/js/script.js'%}"></script>
+	<script  src="{% static 'kssdasite/Front1/js/script.js'%}"></script>
 </body>
 </html>
