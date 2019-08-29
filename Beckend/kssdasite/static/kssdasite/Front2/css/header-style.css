@@ -1,12 +1,12 @@
 
-.top-menu{
+.banner{
 	width: 100%;
 	height: auto;
-	position: relative;
 	border-bottom: 1px solid #85868c;
 	box-shadow: 0px 1px 5px #000;
 	background-color: #fff;
 	position: fixed;
+	margin:0 0;
 	z-index: 2;
 }
 
@@ -42,21 +42,76 @@
 	justify-content: flex-end;
 }
 
+.navbar-h ul{
+	display: none;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 120%;
+	border:1px solid grey;
+	border-top-color: #fff;
+	background-color: #f7f8fa;
+	border-bottom-right-radius: 20px;
+	transition:transform 5.5s ease-out;
+	
+}
+.fifth-work ul a{	
+	color: #000;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 40px;
+	padding: 10px 10px;
+	
+}
+
+.fifth-work:hover ul{
+	display: block;
+	transition:transform 5.5s ease-out;
+}
+
+
 .mobilMenu{
 	width: 100%;
 	height: auto;
 	display:none;
 	float: right;
 	background-color: #fff; 
-	position:relative;
+	position:absolute;
 	text-align: right;
 	z-index: 10;
 }
 .menuShow-icon{
 	display: flex;
 	position: relative;
-	justify-content: flex-end;	
+	justify-content: flex-end;
+	left: 10%;	
 	top: 20%;
+}
+
+.search-icon{
+	display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	float: right;
+	position: relative;
+	top: -38px;
+}
+.none-flex-search{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+}
+.search-div {
+	display: flex;
+	background-color: #fff;
+	flex-wrap: wrap;
+	width:95%;
+	height: 95%;
+	justify-content: flex-end;
+	position:absolute;
 }
 
 .header input{
@@ -71,7 +126,7 @@
 	border-radius: 10px;
 }
 
-.header i{
+.search-icon i{
 	position: relative; 
 	font-size: 2em;
 	color: #2c7ae7;
@@ -94,19 +149,76 @@
 	z-index: 20;
 	
 }
+.fifth-work .mobilM-work{
+	display: none;
+	width: 95%;
+	float: right;
+}
 
+.mobilM-work a{	
+	width: 100%;
+	color: #000;
+	font-size: 1.8em;
+	height: 30px;
+	line-height: 40px;
+	padding: 10px 10px;
+	letter-spacing: 1px;	
+}
+.mobilM-work i{
+	position: relative;
+	left: 95%;
+	font-size: 1.5em;
+	float: right;
+	margin: 10px 20px;
+	
+}
+.fifth-work:hover .fa-angle-down{	
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);	
+}
 .menu-header a{	
 	color: #000;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	height: 40px;
 	line-height: 40px;
 	padding: 20px 20px;
+	letter-spacing: 1px;	
 }
-.menu-header a:hover{	
-	
+
+.navbar-h li {
+    position: relative;
+    height: 100%;
+    
 }
-.menu-header .active a{
+
+.navbar-h a::after {
+    content:'';
+    position:absolute;
+    width:80%;
+    transform:scaleX(0);
+    height:1px;
+    bottom: 5px;
+    left:10%;
+    background-color:grey;
+    transform-origin:bottom right;
+    transition:transform 0.25s ease-out;
+}
+
+
+.navbar-h a:hover::after {
+    transform:scaleX(1);
+    transform-origin:bottom right;
+}
+.navbar-h a:hover{
+	color: grey;
+}
+
+
+
+.menu-header .active a::after{
 	color: gray;
+	transform:scaleX(1);
+    transform-origin:bottom right;
 }
 
 .mobilMenu a{	
@@ -126,6 +238,9 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 599px) {
+	.banner{
+		position: relative;
+	}
 	.logo{
 		width: 130px;
 		height: 30px;
@@ -152,6 +267,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
+	.banner{
+		position: relative;
+	}
 	.header{
 		position: relative;
 		height: 55px;
@@ -178,6 +296,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+	.banner{
+		position: relative;
+	}
 	.header{
 		position: relative;
 		height: 55px;
@@ -205,6 +326,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+	.banner{
+		position: fixed;
+	}
 	.header{
 		position: relative;
 		height: 55px;
@@ -233,6 +357,9 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+	.banner{
+		position:fixed;
+	}
 	.header{
 		position: relative;
 		height: 65px;

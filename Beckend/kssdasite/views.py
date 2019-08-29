@@ -6,6 +6,8 @@ from .models import *
 def index(request):
 	return render(request, 'kssdasite/index.html')
 
+def feedback(request):
+    return render(request, 'kssdasite/feedback.php')
 
 def projects(request):
 	projects = Project.objects.all()
