@@ -113,7 +113,7 @@
 				<div class="stud-info">
 					<h2>{{ alumni.first_name }} {{ alumni.last_name }}</h2>
 					<section>{{ alumni.description|truncatewords:15 }}</section>
-					<a href="{% url 'alumnus_url' alumni.id %}">Read more...</a>
+					<a href="{% url 'alumni' alumni.id %}">Read more...</a>
 				</div>
 			</div>
 			{% endfor %}
