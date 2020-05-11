@@ -82,8 +82,7 @@
 		<div class="first-block">
 			<div class="main-text" >
 				<h1>IT Academy Projects</h1>
-				<p><h3>IT Academy Projects</h3></p>
-				<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси X</p>
+				<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси</p>
 						
 			</div>
 			<div class="first-bg-img"></div>
@@ -99,7 +98,7 @@
 					<div class="project-text">
 						<h3>{{ project.name }}</h3>
 						<p>{{ project.description|truncatewords:15 }}</p>
-						<a href="{% url 'project' project.id %}"><span class="more-pr">ПОДРОБНЕE</span></a>
+						<a href="{% url 'project' project.id %}">ПОДРОБНЕE</a>
 					</div>
 				</div>
 				{% endfor %}				
