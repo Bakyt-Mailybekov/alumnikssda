@@ -26,13 +26,13 @@
 					<div class="menu-header">
 						<div class="h-menu">
 							<ul class="navbar-h">
-								<li class="first-home active"><a href=" ">ГЛАВНАЯ</a></li>	
+								<li class="first-home active"><a href="{% url 'index_url' %}">ГЛАВНАЯ</a></li>
 								<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 								<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
 								<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ </a>
 								<ul>
-									<li><a href="projects/"> Проекты</a></li>
-									<li><a href="languages/"> Студенты</a></li>
+									<li><a href="{% url 'projects_url' %}"> Проекты</a></li>
+									<li><a href="{% url 'languages_url' %}"> Студенты</a></li>
 								</ul>
 							</li>
 								<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
@@ -47,7 +47,7 @@
 				<div class="mobilMenu">
 					<div class="v-menu">
 							<ul>
-							<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
+							<li class="first-home active"><a href="{% url 'index_url' %}">ГЛАВНАЯ</a></li>	
 							<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
 							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ</a></li>
@@ -112,8 +112,8 @@
 				
 				<div class="stud-info">
 					<h2>{{ alumni.first_name }} {{ alumni.last_name }}</h2>
-					<section>{{ alumni.description }}</section>
-					<a href="alumnus/">Read more...</a>
+					<section>{{ alumni.description|truncatewords:15 }}</section>
+					<a href="{% url 'alumnus_url' alumni.id %}">Read more...</a>
 				</div>
 			</div>
 			{% endfor %}

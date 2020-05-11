@@ -63,32 +63,31 @@
 
 
 	<div class="wrapper">
+		{% for alumni in alumnis %}
 		<div class="banner">
 			<div class="banner-whiteness"></div>
 			<div class="stud-discription">
-				<h2 id="first_name">John</h2>
-				<h2 id="last_name">Week</h2>
+				<h2 id="first_name">{{ alumni.first_name }}</h2>
+				<h2 id="last_name">{{ alumni.last_name }}</h2>
 			</div>
 			<div class="stud_ava">
-				<img id="picture" src="{% static 'kssdasite/Front2/img/StudAvatars/ava.png'%}" alt="">
+				<img id="picture" src="{{ alumni.picture.url }}" alt="">				
 			</div>
 		</div>
-
 		<div class="discriptions">
 			<div class="aboutStud">
 				<h2>О студенте</h2>
-				<p class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus voluptates atque commodi qui eius ab voluptas. Ducimus quisquam obcaecati, sit quia nostrum labore, odio voluptas provident deleniti aperiam fuga.</p>
+				<p class="discription">{{ alumni.description }}</p>
 			</div>
-
-			<div class="stud-contacts">
+			<div class="stud-contacts">				
 				<h2>Контакты</h2>
-				<p>Email: <span id="email">john@gmail.com</span></p>
-				<p>Телефон: <span id="phone_number">0555 000 123</span></p>
-				<p>GitHub: <a href="#" id="github_link">http://github_link.git</a></p>
-				<button class="btn" style="width:100%"><i class="fa fa-download"></i>Скачать CV</button>
+				<p>Email: <span id="email">{{ alumni.email }}</span></p>
+				<p>Телефон: <span id="phone_number">{{ alumni.phone_number }}</span></p>
+				<p>GitHub: <a href="#" id="github_link">{{ alumni.github_link }}</a></p>
+				<button class="btn" style="width:100%"><i class="fa fa-download"></i>{{ alumni.cv }}</button>
 			</div>
-
 		</div>
+		{% endfor %}
 	</div>
 
 

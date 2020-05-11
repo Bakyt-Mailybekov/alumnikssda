@@ -31,8 +31,8 @@
 							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
 							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ </a>
 								<ul>
-									<li><a href="projects/"> Проекты</a></li>
-									<li><a href="languages/"> Студенты</a></li>
+									<li><a href="{% url 'projects_url' %}/"> Проекты</a></li>
+									<li><a href="{% url 'alumni_url' %}"> Студенты</a></li>
 								</ul>
 							</li>
 							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
@@ -60,14 +60,14 @@
 						
 						<div class="v-menu">
 							 <ul>
-								<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
+								<li class="first-home active"><a href="{% url 'index_url' %}">ГЛАВНАЯ</a></li>	
 								<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
 								<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
 								<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ
 								<i class="fas fa-angle-down"></i></a>
 									<ul class="mobilM-work">
-										<li><a href="projects/"> Проекты</a></li>
-										<li><a href="languages/"> Студенты</a>
+										<li><a href="{% url 'projects_url' %}"> Проекты</a></li>
+										<li><a href="{% url 'alumni_url' %}"> Студенты</a>
 										</li>
 									</ul>
 
@@ -89,7 +89,7 @@
 					<div class="first-bg-img"></div>
 				<div class="conteiner-feedback f-link">
 				      	<div class="blank-feedback">
-				      		<form action="feedback.php" method="POST">
+				      		<form action="feedback.php/" method="POST">
 				      			<legend>Заголовок формы</legend>
 				      			<span><i class="far fa-times-circle"></i></span>
 				      			
@@ -187,19 +187,19 @@
 					</div>	
 					<div class="work-project">				
 						<div class="projects show-border">
-							<a href="projects/"><div class="projects-img w-img"></div>
+							<a href="{% url 'projects_url' %}"><div class="projects-img w-img"></div>
 							</a>
 							<div class="project-text">
 								<h4>Проекты</h4>
 								<p>Проект “Продвижение обучения в области ИТ для людей с особыми потребностями” реализуется Кыргызской ассоциацией разработчиков программного обеспечения и услуг (КАРПОУ) и IT Академией при поддержке Европейского Союза</p>
 								
 							</div>
-							<a href="projects/">
+							<a href="{% url 'projects_url' %}">
 							<span>ПОДРОБНЕЕ</span>
 							</a>
 						</div>
 						<div class="students show-border">
-							<a href="languages/"><div class="students-img w-img"></div>
+							<a href="{% url 'alumni_url' %}"><div class="students-img w-img"></div>
 							</a>
 							<div class="students-text">
 								<h4>Студенты</h4>
@@ -207,7 +207,7 @@
 
 								
 							</div>
-							<a href="languages/">
+							<a href="{% url 'alumni_url' %}">
 							<span>ПОДРОБНЕЕ</span>
 							</a>
 						</div>
@@ -386,8 +386,8 @@
 	</div>
 
 
-
+</body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script  src="{% static 'kssdasite/Front1/js/script.js'%}"></script>
-</body>
+
 </html>

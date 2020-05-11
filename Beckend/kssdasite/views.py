@@ -21,10 +21,8 @@ def alumni(request):
     return render(request, 'kssdasite/alumni.html', {'alumnis': alumnis})
 
 def alumnus(request):
-    return render(request, 'kssdasite/alumnus.html')
-
-
-
+    alumnis = Alumni.objects.all()
+    return render(request, 'kssdasite/alumnus.html', {'alumnis': alumnis})
 
 def about(request):
     alumnis = Alumni.objects.all()
@@ -36,3 +34,4 @@ def about(request):
     else:
         alumni = Alumni.objects.all()
 '''
+
