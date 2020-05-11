@@ -1,6 +1,7 @@
 from django.views.generic import DetailView
 from django.shortcuts import render
 from .models import *
+from .models import Project
 # Create your views here.
 
 
@@ -13,6 +14,12 @@ def feedback(request):
 def projects(request):
 	projects = Project.objects.all()
 	return render(request, 'kssdasite/projects.html', {'projects': projects})
+
+
+class ProjectDetailView(DetailView):
+    model = Project
+    template_name = 'kssdasite/project_detail_view.html'
+    context_object_name = 'project'
 
 def languages(request):
     return render(request, 'kssdasite/languages.html')

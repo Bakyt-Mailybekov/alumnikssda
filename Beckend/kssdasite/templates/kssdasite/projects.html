@@ -82,7 +82,8 @@
 		<div class="first-block">
 			<div class="main-text" >
 				<h1>IT Academy Projects</h1>
-				<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси</p>
+				<p><h3>IT Academy Projects</h3></p>
+				<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси X</p>
 						
 			</div>
 			<div class="first-bg-img"></div>
@@ -98,7 +99,7 @@
 					<div class="project-text">
 						<h3>{{ project.name }}</h3>
 						<p>{{ project.description|truncatewords:15 }}</p>
-						<a href="#about-project"><span class="more-pr">ПОДРОБНЕE</span></a>
+						<a href="{% url 'project' project.id %}"><span class="more-pr">ПОДРОБНЕE</span></a>
 					</div>
 				</div>
 				{% endfor %}				
@@ -106,18 +107,18 @@
 		</div>
 
 
-		<div class="third-block" id="about-project">
+		<!--<div class="third-block" id="about-project">
 			<div class="wrapper-pojects">
 				{% for project in projects %}
 				<div class="text-about-project">
 							<h3>{{ project.name }}</h3>
 							<p>{{ project.description }}</p>
 				</div>
-				<!--<div class="pr-img">
+				<div class="pr-img">
 					<img src="{% static 'kssdasite/Front1/img/c-sharp.png'%}" >
 					<img src="{% static 'kssdasite/Front1/img/c-sharp.png'%}" >
 					<img src="{% static 'kssdasite/Front1/img/c-sharp.png'%}" >
-				</div>-->
+				</div>
 				
 				<div class="project-participants"><h2>Участники Проекта</h2></div>
 
@@ -133,7 +134,7 @@
 				{% endfor %}
 			</div>
 
-		</div>
+		</div>-->
 	</div>
 
 	<!--footer-->
