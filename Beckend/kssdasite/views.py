@@ -1,3 +1,4 @@
+from django.views.generic import DetailView
 from django.shortcuts import render
 from .models import *
 # Create your views here.
@@ -19,6 +20,12 @@ def languages(request):
 def alumni(request):
     alumnis = Alumni.objects.all()
     return render(request, 'kssdasite/alumni.html', {'alumnis': alumnis})
+
+class AlumniDetailView(DetailView):
+    model = Alumni
+    template_name = 'kssdasite/alumni_detail_view.html'
+    context_object_name = 'alumni'
+
 
 def alumnus(request):
     return render(request, 'kssdasite/alumnus.html')
