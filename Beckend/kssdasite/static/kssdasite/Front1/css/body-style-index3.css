@@ -37,12 +37,12 @@
 	transform: translateY(50%);	
 	position: relative;
 	align-items: center;
-	top: 20%;
+	top: 10%;
 	left: 10%;
 	margin: 0px 0px;
 }
 .main-text h1{
-	font-size: 5em;
+	font-size: 4em;
 	color: #303036;
 	margin: 0px 0px;
 	

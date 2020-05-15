@@ -36,7 +36,7 @@ def upload_location(project, filename):
 class Project(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
-    picture = models.ImageField(upload_to=upload_location, max_length=50, blank=True, null=True)
+    picture = models.ImageField(upload_to=upload_location, max_length=100, blank=True, null=True)
     year = models.ForeignKey(Year, on_delete=models.CASCADE)
 
     def __str__(self):

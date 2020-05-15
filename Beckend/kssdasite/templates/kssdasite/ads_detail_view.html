@@ -81,59 +81,12 @@
 	<div class="main">
 		<div class="first-block">
 			<div class="main-text" >
-				<h1>Объявления</h1>
-				<p>Здесь вы можете посмотреть ваканcии наших партнеров</p>
-						
+				<h1> {{ project.name }} </h1>
+				<p>{{ project.description }}</p>						
 			</div>
 			<div class="first-bg-img"></div>
 				
 		</div>
-
-		<div class="second-block">
-			<!--<h2>Объявления</h2> -->
-			<div class="wrapper-pojects">
-				{% for ad in ads %}
-				<div class="pr-card">
-					<div class="project-text">
-						<h3>{{ ad.ad_names }}</h3>
-                        <h3>{{ ad.company_name }}</h3>
-						<p>{{ ad.description|truncatewords:20 }}</p>
-						<a href="{% url 'ad' ads.id %}">ПОДРОБНЕE</a>
-					</div>
-				</div>
-				{% endfor %}				
-			</div>
-		</div>
-
-
-		<!--<div class="third-block" id="about-project">
-			<div class="wrapper-pojects">
-				{% for project in projects %}
-				<div class="text-about-project">
-							<h3>{{ project.name }}</h3>
-							<p>{{ project.description }}</p>
-				</div>
-				<div class="pr-img">
-					<img src="{% static 'kssdasite/Front1/img/c-sharp.png'%}" >
-					<img src="{% static 'kssdasite/Front1/img/c-sharp.png'%}" >
-					<img src="{% static 'kssdasite/Front1/img/c-sharp.png'%}" >
-				</div>
-				
-				<div class="project-participants"><h2>Участники Проекта</h2></div>
-
-				<div class="person-card">
-					<div class="more-person"><a href=""><i class="far fa-arrow-alt-circle-right"></i></a>
-					</div>
-					<div class="person-img"><img src="{% static 'kssdasite/Front1/img/Bakyt.jpg'%}" width="100%" height="100%"></div>
-					<div class="info-person">
-						<h3>Bakyt Mailybekov</h3>
-						<p>Java</p>
-					</div>
-				</div>
-				{% endfor %}
-			</div>
-
-		</div>-->
 	</div>
 
 	<!--footer-->

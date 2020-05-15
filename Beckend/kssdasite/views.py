@@ -55,3 +55,8 @@ class AdsView(ListView):
     model = Ads
     template_name = 'kssdasite/ads.html'
     context_object_name = 'ads'
+
+class AdDetailView(DetailView):
+    model = Ads
+    template_name = 'kssdasite/ads_detail_view.html'
+    context_object_name = 'ad'
