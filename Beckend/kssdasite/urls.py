@@ -25,5 +25,5 @@ urlpatterns = [
     path('alumni/<int:pk>/', AlumniDetailView.as_view(), name='alumni'),
     path('project/<int:pk>/', ProjectDetailView.as_view(), name='project'),
     path('ads/', AdsView.as_view(), name='ads'),
-    path('ads/<int:pk>', AdDetailView.as_view(), name='ad')
+    path('ads/<int:pk>/', AdDetailView.as_view(), name='ad')
 ]

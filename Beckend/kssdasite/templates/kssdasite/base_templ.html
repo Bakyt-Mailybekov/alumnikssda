@@ -29,8 +29,9 @@
 							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
 							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ </a>
 								<ul>
-									<li><a href="projects/"> Проекты</a></li>
-									<li><a href="languages/"> Студенты</a></li>
+									<li><a href="{% url 'projects_url' %}/"> Проекты</a></li>
+									<li><a href="{% url 'alumni_url' %}"> Студенты</a></li>
+									<li><a href="{% url 'ads' %}"> Объявления</a></li>
 								</ul>
 							</li>
 							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	

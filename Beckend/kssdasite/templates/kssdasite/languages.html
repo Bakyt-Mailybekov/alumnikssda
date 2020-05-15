@@ -27,15 +27,16 @@
 					<div class="h-menu">
 						<ul class="navbar-h">
 							<li class="first-home active"><a href="{% url 'index_url' %}">ГЛАВНАЯ</a></li>	
-							<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
-							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
+							<li class="second-about-us"><a href="{% url 'index_url' %}#about-us">О НАС</a></li>	
+							<li class="third-st"><a href="{% url 'index_url' %}#statistics">СТАТИСТИКА</a></li>	
 							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ </a>
 								<ul>
-									<li><a href="projects/"> Проекты</a></li>
-									<li><a href="languages/"> Студенты</a></li>
+									<li><a href="{% url 'projects_url' %}/"> Проекты</a></li>
+									<li><a href="{% url 'alumni_url' %}"> Студенты</a></li>
+									<li><a href="{% url 'ads' %}"> Объявления</a></li>
 								</ul>
 							</li>
-							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
+							<li class="sixth-contacts"><a href="{% url 'index_url' %}#contacts">КОНТАКТЫ</a></li>	
 						</ul>
 					</div>
 					<div class="menuShow-icon">
@@ -109,9 +110,9 @@
 				<ul>
 					<li><a href=""> Статьи</a></li>
 					<li><a href=""> Курсы</a></li>
-					<li><a href=""> Проекты</a></li>
-					<li><a href=""> Вакансии</a></li>
-					<li><a href=""> Контакты</a></li>
+					<li><a href="{% url 'projects_url' %}"> Проекты</a></li>
+					<li><a href="{% url 'ads' %}"> Вакансии</a></li>
+					<li><a href="{% url 'index_url' %}#contacts"> Контакты</a></li>
 
 				</ul>
 				<div class="icon-media">

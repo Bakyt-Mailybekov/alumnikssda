@@ -76,3 +76,6 @@ class Ads(models.Model):
     ad_names = models.CharField(max_length=100, null=False, blank=False, verbose_name='Ad names')
     company_name = models.CharField(max_length=100, null=False, blank=False, verbose_name='Company name')
     description = models.TextField(max_length=2000, null=False, blank=False, verbose_name='Description')
+    picture = models.ImageField(upload_to=upload_location, max_length=100, blank=True, null=True)
+    def __str__(self):
+        return self.ad_names + " - " + self.company_name

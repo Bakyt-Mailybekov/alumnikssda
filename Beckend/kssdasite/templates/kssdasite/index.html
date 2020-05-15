@@ -26,9 +26,9 @@
 				<div class="menu-header">
 					<div class="h-menu">
 					    <ul class="navbar-h">
-							<li class="first-home active"><a href="#">ГЛАВНАЯ</a></li>	
-							<li class="second-about-us"><a href="#about-us">О НАС</a></li>	
-							<li class="third-st"><a href="#statistics">СТАТИСТИКА</a></li>	
+							<li class="first-home active"><a href="{% url 'index_url' %}">ГЛАВНАЯ</a></li>	
+							<li class="second-about-us"><a href="{% url 'index_url' %}#about-us">О НАС</a></li>	
+							<li class="third-st"><a href="{% url 'index_url' %}#statistics">СТАТИСТИКА</a></li>	
 							<li class="fifth-work"><a href="#work-with-us">РАБОТАТЬ С НАМИ </a>
 								<ul>
 									<li><a href="{% url 'projects_url' %}/"> Проекты</a></li>
@@ -36,7 +36,7 @@
 									<li><a href="{% url 'ads' %}"> Объявления</a></li>
 								</ul>
 							</li>
-							<li class="sixth-contacts"><a href="#contacts">КОНТАКТЫ</a></li>	
+							<li class="sixth-contacts"><a href="{% url 'index_url' %}#contacts">КОНТАКТЫ</a></li>	
 						</ul>
 					</div>
 					<div class="none-flex-search">
@@ -192,7 +192,7 @@
 							<a href="{% url 'projects_url' %}"><div class="projects-img w-img"></div></a>
 								<div class="project-text">
 									<h4>Проекты</h4>
-									<p>Проект “Продвижение обучения в области ИТ для людей с особыми потребностями” реализуется Кыргызской ассоциацией разработчиков программного обеспечения и услуг (КАРПОУ) и IT Академией при поддержке Европейского Союза</p>								
+									<p>Ознакомьтесь со списком проектов IT Академии и её выпускников.</p>								
 								</div>
 							<a href="{% url 'projects_url' %}"><span>ПОДРОБНЕЕ</span></a>
 						</div>
@@ -201,7 +201,7 @@
 							</a>
 								<div class="students-text">
 									<h4>Студенты</h4>
-									<p>Цель проекта — расширение экономических возможностей девушек и женщин путем обучения практическим навыкам в сфере информационных технологий (ИТ). Это повысит грамотность, навыки лидерства и женского предпринимательства через IT-академию</p>
+									<p>Ознакомьтесь со списком студентов и выпускников IT Академии.</p>
 								</div>
 							<a href="{% url 'alumni_url' %}"><span>ПОДРОБНЕЕ</span></a>
 						</div>
@@ -274,9 +274,9 @@
 							<ul>
 								<li><a href=""> Статьи</a></li>
 								<li><a href=""> Курсы</a></li>
-								<li><a href=""> Проекты</a></li>
-								<li><a href=""> Вакансии</a></li>
-								<li><a href=""> Контакты</a></li>
+								<li><a href="{% url 'projects_url' %}"> Проекты</a></li>
+								<li><a href="{% url 'ads' %}"> Вакансии</a></li>
+								<li><a href="{% url 'index_url' %}#contacts"> Контакты</a></li>
 
 							</ul>
 							<div class="icon-media">
