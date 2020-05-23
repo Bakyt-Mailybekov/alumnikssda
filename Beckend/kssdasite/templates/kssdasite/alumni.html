@@ -74,7 +74,7 @@
 		</div>
 
 		<div class="filter-list">
-			<div class="langDropdown">
+			<!--<div class="langDropdown">
 				<button onclick="langShow()" id="lang-btn" class="dropbtn">Языки</button>
 				<div id="myDropdown" class="dropdown-content">
 					<a href="#">Front-end</a>
@@ -97,10 +97,12 @@
 					<a id="year" href="#">2010-2011</a>
 					<a id="year" href="#">2010-2011</a>
 				</div>
-			</div>
+			</div>-->
 
 			<form>
-				<input type="text" name="search" placeholder="Search..">
+				{% csrf_token %}
+				<input type="text" name="search" placeholder="Search">
+				<button type="submit", class="dropbtn">Поиск</button>
 			</form>
 		</div>
 
